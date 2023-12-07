@@ -45,3 +45,48 @@ console.log(replaceEvens(given_arr));
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+// Codewars Problem 1:
+// Given an array of integers, return a new array with each value doubled.
+
+function maps(x){
+    const y = [];
+    for (let i = 0; i < x.length; i++) {
+      y.push(x[i] * 2);
+    } return y;
+};
+
+// Codewars Problem 2:
+// Make a simple function called greet that returns the most-famous "hello world!"
+
+function greet() {
+    return "hello world!"
+};
+
+// Codewars Problem 3:
+/*Timmy & Sarah think they are in love, but around where they live, they will only 
+know once they pick a flower each. If one of the flowers has an even number of 
+petals and the other has an odd number of petals it means they are in love.
+Write a function that will take the number of petals of each flower and return 
+true if they are in love and false if they aren't.*/
+
+function lovefunc(flower1, flower2){
+    if (flower1 % 2 == flower2 % 2) {
+      return false
+    } else {
+      return true
+    };
+};
+
+// Codewars Problem 4:
+/*Your classmates asked you to copy some paperwork for them. You know that there 
+are 'n' classmates and the paperwork has 'm' pages.
+Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.*/
+
+function paperwork(n, m) {
+    if (n < 0 || m < 0) {
+      return 0
+    } else {
+      return n * m
+    };
+};
